@@ -1,5 +1,5 @@
 {
-  "author": "Sean Lavine <sean@bitme.com>",
+  "author": "Sean Lavine <sean@eternalrise.com>",
   "name": "bitme-rest-client",
   "description": "Communicate with BitMe REST API",
   "version": "0.0.1",
@@ -16,5 +16,9 @@
   "optionalDependencies": {},
   "engines": {
     "node": ">=0.6.0 <0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bitme/node-rest-client.git"
   }
 }
