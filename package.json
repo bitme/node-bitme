@@ -2,7 +2,7 @@
   "author": "Sean Lavine <sean@bitme.com>",
   "name": "bitme-rest-client",
   "description": "Communicate with BitMe REST API",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/index",
   "scripts": {
     "prepublish": "make build"
