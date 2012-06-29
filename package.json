@@ -3,6 +3,7 @@
   "name": "bitme-rest-client",
   "description": "Communicate with BitMe REST API",
   "version": "0.0.2",
+  "keywords": ["bitme", "bitcoin"],
   "main": "lib/index",
   "scripts": {
     "prepublish": "make build"
