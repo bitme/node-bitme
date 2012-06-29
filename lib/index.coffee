@@ -50,15 +50,15 @@ class BitMe
   
   orderbook: (currencyPair, cb) ->
     currencyPair = encodeURIComponent currencyPair
-    doRequest.call @, 'get', "orderbook/#{currencyPair}", data, cb
+    doRequest.call @, 'get', "orderbook/#{currencyPair}", null, cb
     
   compatOrderbook: (currencyPair, cb) ->
     currencyPair = encodeURIComponent currencyPair
-    doRequest.call @, 'get', "compat/orderbook/#{currencyPair}", data, cb
+    doRequest.call @, 'get', "compat/orderbook/#{currencyPair}", null, cb
     
   compatTrades: (currencyPair, cb) ->
     currencyPair = encodeURIComponent currencyPair
-    doRequest.call @, 'get', "compat/trades/#{currencyPair}", data, cb
+    doRequest.call @, 'get', "compat/trades/#{currencyPair}", null, cb
     
     
   ##
