@@ -2,6 +2,12 @@
 
 Communicate with [BitMe REST API](https://test.bitme.com/docs/rest).
 
+## Install
+
+```
+$ npm install bitme-rest-client
+```
+
 ## Verify API Credentials
 
 ```js
