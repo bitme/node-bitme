@@ -1,6 +1,6 @@
 # bitme-rest-client
 
-Communicate with [BitMe REST API](https://test.bitme.com/docs/rest).
+Communicate with [BitMe REST API](http://bitme.github.com/rest/).
 
 ## Install
 
