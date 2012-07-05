@@ -55,10 +55,11 @@ class BitMe
   compatOrderbook: (currencyPair, cb) ->
     currencyPair = encodeURIComponent currencyPair
     doRequest.call @, 'get', "compat/orderbook/#{currencyPair}", null, cb
-    
-  compatTrades: (currencyPair, cb) ->
+
+  compatTrades: (currencyPair, since..., cb) ->
+    data = if since.length then since: since[0] else null
     currencyPair = encodeURIComponent currencyPair
-    doRequest.call @, 'get', "compat/trades/#{currencyPair}", null, cb
+    doRequest.call @, 'get', "compat/trades/#{currencyPair}", data, cb
     
     
   ##
