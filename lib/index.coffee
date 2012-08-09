@@ -73,6 +73,10 @@ class BitMe
   accounts: (cb) ->
     data = nonce: @nonce++
     doRequest.call @, 'get', 'accounts', data, cb
+    
+  bitcoinAddress: (cb) ->
+    data = nonce: @nonce++
+    doRequest.call @, 'get', 'bitcoin-address', data, cb
   
   ordersOpen: (cb) ->
     data = nonce: @nonce++
