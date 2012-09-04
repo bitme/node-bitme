@@ -74,6 +74,10 @@ class BitMe
     data = nonce: @nonce++
     doRequest.call @, 'get', 'accounts', data, cb
     
+  accountLimits: (cb) ->
+    data = nonce: @nonce++
+    doRequest.call @, 'get', 'account-limits', data, cb
+    
   bitcoinAddress: (cb) ->
     data = nonce: @nonce++
     doRequest.call @, 'get', 'bitcoin-address', data, cb
