@@ -1,5 +1,9 @@
 # bitme-rest-client Changelog
 
+## v0.0.6 (2013/01/14)
+* Remove GET /rest/account-limits
+* Remove support for now defunct testnet
+
 ## v0.0.5 (2012/09/04)
 Add GET /rest/account-limits
 

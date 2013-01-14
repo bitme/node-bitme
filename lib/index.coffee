@@ -38,8 +38,8 @@ doRequest = (method, call, data, cb) ->
     cb null, json
 
 class BitMe
-  constructor: (@key = null, @secret = null, testnet = false) ->
-    @baseUri = if testnet then 'https://test.bitme.com/rest/' else 'https://bitme.com/rest/'
+  constructor: (@key = null, @secret = null) ->
+    @baseUri = 'https://bitme.com/rest/'
     @nonce = Date.now()
     @strictSSL = true
     
@@ -73,10 +73,6 @@ class BitMe
   accounts: (cb) ->
     data = nonce: @nonce++
     doRequest.call @, 'get', 'accounts', data, cb
-    
-  accountLimits: (cb) ->
-    data = nonce: @nonce++
-    doRequest.call @, 'get', 'account-limits', data, cb
     
   bitcoinAddress: (cb) ->
     data = nonce: @nonce++
