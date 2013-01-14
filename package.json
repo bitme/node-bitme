@@ -2,7 +2,7 @@
   "author": "Sean Lavine <sean@eternalrise.com>",
   "name": "bitme-rest-client",
   "description": "Communicate with BitMe REST API",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "bitme",
     "bitcoin"
