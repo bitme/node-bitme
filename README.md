@@ -30,12 +30,3 @@ bitme.orderbook('BTCUSD', function(err, res) {
   console.log(res);
 });
 ```
-
-## Testing
-
-You may use the [testnet](https://test.bitme.com) API for development/testing 
-purposes.
-
-```js
-var bitme = new BitMe('testnetkey', 'testnetsecret', true);
-```
