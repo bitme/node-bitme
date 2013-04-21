@@ -1,5 +1,8 @@
 # bitbox-rest-client Changelog
 
+## v0.0.8 (2013/04/20)
+* Fix package description
+
 ## v0.0.7 (2013/04/20)
 * Rebrand as BitBox
 
