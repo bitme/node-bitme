@@ -97,6 +97,26 @@ class BitBox
       uuid: uuid
     doRequest.call @, 'post', 'order/cancel', data, cb
     
+  bitcoinWithdraw: (address, amount, cb) ->
+    data = 
+      nonce: @nonce++
+      address: address
+      amount: amount
+    doRequest.call @, 'post', 'bitcoin-withdraw', data, cb
+    
+  transactionGet: (id, cb) ->
+    data = nonce: @nonce++
+    id = encodeURIComponent id
+    doRequest.call @, 'get', "transaction/#{id}", data, cb
+    
+  transactionsGet: (currencyCd, limit, orderBy, page, cb) ->
+    data = 
+      nonce: @nonce++
+      limit: limit
+      order_by: orderBy
+      page: page
+    doRequest.call @, 'get', "transactions/#{currencyCd}", data, cb
+    
   orderGet: (uuid, cb) ->
     data = nonce: @nonce++
     uuid = encodeURIComponent uuid
@@ -128,5 +148,14 @@ class BitBox
       currency_cd: currencyCd
       amount: amount
     doRequest.call @, 'post', 'transfer/user', data, cb
+    
+  userCreate: (email, password, termsOfUse, apiLabel, cb) ->
+    data =
+      nonce: @nonce++
+      email: email
+      password: password
+      terms_of_use: termsOfUse
+      api_label: apiLabel
+    doRequest.call @, 'post', 'create-user', data, cb
     
 module.exports = BitBox
