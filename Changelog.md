@@ -1,5 +1,12 @@
 # bitbox-rest-client Changelog
 
+## v0.0.9 (2013/09/04)
+* Add new wallet-provider API calls
+  * bitcoinWithdraw()
+  * transactionGet()
+  * transactionsGet()
+  * userCreate()
+
 ## v0.0.8 (2013/04/20)
 * Fix package description
 
