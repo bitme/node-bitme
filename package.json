@@ -2,7 +2,7 @@
   "author": "Sean Lavine <sean@eternalrise.com>",
   "name": "bitbox-rest-client",
   "description": "Communicate with BitBox REST API",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "keywords": [
     "bitbox",
     "bitcoin"
