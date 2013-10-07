@@ -1,10 +1,10 @@
 {
   "author": "Sean Lavine <sean@eternalrise.com>",
-  "name": "bitbox-rest-client",
-  "description": "Communicate with BitBox REST API",
+  "name": "bitme-rest-client",
+  "description": "Communicate with BitMe REST API",
   "version": "0.0.9",
   "keywords": [
-    "bitbox",
+    "bitme",
     "bitcoin"
   ],
   "main": "lib/index",
@@ -23,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/inbitbox/node-rest-client.git"
+    "url": "git://github.com/bitme/node-rest-client.git"
   }
 }

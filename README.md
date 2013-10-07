@@ -1,20 +1,20 @@
-# bitbox-rest-client
+# bitme-rest-client
 
-Communicate with [BitBox REST API](http://inbitbox.github.io/rest/).
+Communicate with [BitMe REST API](http://bitme.github.io/rest/).
 
 ## Install
 
 ```
-$ npm install bitbox-rest-client
+$ npm install bitme-rest-client
 ```
 
 ## Verify API Credentials
 
 ```js
-var BitBox = require('bitbox-rest-client');
-var bitbox = new BitBox('mykey', 'mysecret');
+var BitMe = require('bitme-rest-client');
+var bitme = new BitMe('mykey', 'mysecret');
 
-bitbox.verifyCredentials(function(err, res) {
+bitme.verifyCredentials(function(err, res) {
   if (err) return console.error(err);
   console.log('credentials are valid!');
 });
@@ -24,8 +24,8 @@ bitbox.verifyCredentials(function(err, res) {
 
 ```js
 // orderbook does not require authentication
-var bitbox = new BitBox();
-bitbox.orderbook('BTCUSD', function(err, res) {
+var bitme = new BitMe();
+bitme.orderbook('BTCUSD', function(err, res) {
   if (err) return console.error(err);
   console.log(res);
 });

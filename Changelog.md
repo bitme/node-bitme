@@ -1,4 +1,4 @@
-# bitbox-rest-client Changelog
+# bitme-rest-client Changelog
 
 ## v0.0.9 (2013/09/04)
 * Add new wallet-provider API calls

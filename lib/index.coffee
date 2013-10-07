@@ -37,9 +37,9 @@ doRequest = (method, call, data, cb) ->
       return cb err
     cb null, json
 
-class BitBox
+class BitMe
   constructor: (@key = null, @secret = null) ->
-    @baseUri = 'https://bitbox.mx/rest/'
+    @baseUri = 'https://bitme.com/rest/'
     @nonce = Date.now()
     @strictSSL = true
     
@@ -158,4 +158,4 @@ class BitBox
       api_label: apiLabel
     doRequest.call @, 'post', 'create-user', data, cb
     
-module.exports = BitBox
+module.exports = BitMe
