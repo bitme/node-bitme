@@ -1,5 +1,8 @@
 # bitme-rest-client Changelog
 
+## v0.0.10 (2013/10/07)
+* Rebrand as BitMe
+
 ## v0.0.9 (2013/09/04)
 * Add new wallet-provider API calls
   * bitcoinWithdraw()
