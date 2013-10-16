@@ -23,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bitme/node-rest-client.git"
+    "url": "git://github.com/bitme/node-bitme.git"
   }
 }
