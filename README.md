@@ -1,17 +1,17 @@
-# bitme-rest-client
+# bitme
 
-Communicate with [BitMe REST API](http://bitme.github.io/rest/).
+Communicate with [BitMe REST API](http://bitme.github.io/rest/) using Node.js.
 
 ## Install
 
 ```
-$ npm install bitme-rest-client
+$ npm install bitme
 ```
 
 ## Verify API Credentials
 
 ```js
-var BitMe = require('bitme-rest-client');
+var BitMe = require('bitme');
 var bitme = new BitMe('mykey', 'mysecret');
 
 bitme.verifyCredentials(function(err, res) {
