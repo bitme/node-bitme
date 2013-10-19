@@ -9,7 +9,8 @@
   ],
   "main": "lib/index",
   "scripts": {
-    "prepublish": "make build"
+    "prepublish": "coffee -c lib/",
+    "postpublish": "rm lib/*.js"
   },
   "dependencies": {
     "request": "~2.9.202"
