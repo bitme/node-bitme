@@ -1,4 +1,4 @@
-# bitme-rest-client Changelog
+# bitme Changelog
 
 ## v0.0.10 (2013/10/07)
 * Rebrand as BitMe
