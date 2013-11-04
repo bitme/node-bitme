@@ -122,40 +122,4 @@ class BitMe
     uuid = encodeURIComponent uuid
     doRequest.call @, 'get', "order/#{uuid}", data, cb
     
-  couponCreate: (currencyCd, amount, cb) ->
-    data =
-      nonce: @nonce++ 
-      currency_cd: currencyCd
-      amount: amount
-    doRequest.call @, 'post', 'coupon/create', data, cb
-    
-  couponRedeem: (code, cb) ->
-    data =
-      nonce: @nonce++
-      code: code
-    doRequest.call @, 'post', 'coupon/redeem', data, cb
-    
-  couponCancel: (code, cb) ->
-    data =
-      nonce: @nonce++
-      code: code
-    doRequest.call @, 'post', 'coupon/cancel', data, cb
-    
-  transferUser: (toUserUuid, currencyCd, amount, cb) ->
-    data =
-      nonce: @nonce++
-      to_user_uuid: toUserUuid
-      currency_cd: currencyCd
-      amount: amount
-    doRequest.call @, 'post', 'transfer/user', data, cb
-    
-  userCreate: (email, password, termsOfUse, apiLabel, cb) ->
-    data =
-      nonce: @nonce++
-      email: email
-      password: password
-      terms_of_use: termsOfUse
-      api_label: apiLabel
-    doRequest.call @, 'post', 'create-user', data, cb
-    
 module.exports = BitMe
