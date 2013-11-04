@@ -25,7 +25,7 @@ bitme.verifyCredentials(function(err, res) {
 ```js
 // orderbook does not require authentication
 var bitme = new BitMe();
-bitme.orderbook('BTCUSD', function(err, res) {
+bitme.orderbook('BTCLTC', function(err, res) {
   if (err) return console.error(err);
   console.log(res);
 });
