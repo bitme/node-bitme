@@ -19,11 +19,15 @@
     "coffee-script": "~1.3.3"
   },
   "optionalDependencies": {},
-  "engines": {
-    "node": ">=0.6.0 <0.9.0"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/bitme/node-bitme.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bitme/node-bitme/issues"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "license": "BSD-2-Clause"
 }
