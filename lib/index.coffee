@@ -28,7 +28,9 @@ doRequest = (method, call, data, cb) ->
     try
       json = JSON.parse body
     catch e
-      return cb new Error "Server returned malformed JSON with status code: #{res.statusCode}"
+      err = new Error "Server returned malformed JSON with status code: #{res.statusCode}"
+      err.res = res
+      return cb err
     if res.statusCode isnt 200
       if not json.error
         return cb new Error "Server failed to return error object with status code: #{res.statusCode}"
