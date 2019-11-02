@@ -13,7 +13,7 @@
     "postpublish": "rm lib/*.js"
   },
   "dependencies": {
-    "request": "~2.9.202"
+    "request": "~2.88.0"
   },
   "devDependencies": {
     "coffee-script": "~1.3.3"
